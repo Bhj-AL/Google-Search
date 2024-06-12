@@ -1,0 +1,112 @@
+<!--
+  Hit RUN to see this project in action!
+  
+  This project will auto-refresh as you edit the HTML, CSS and JS. See README.md for more info (including how to disable auto-refresh and install packages).
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Google</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round">
+  <link rel="icon" type="image/x-icon" href="google-logo-icon-png-transparent-background-osteopathy-16.png">
+</head>
+
+<body>
+    <div class="header-right">
+      
+      <button class="header-button"><a href="https://myaccount.google.com/communication-preferences?utm_source=ga_privacy&utm_medium=web&continue=https%3A%2F%2Fmyaccount.google.com%2Fdata-and-privacy">
+        <i class="material-icons-outlined">
+          notifications
+        </i></a>
+      </button>
+      
+      <button class="header-button">
+        <a href="https://myaccount.google.com/">
+       <img src="userLogoMain.png">
+        </a></button>
+    </div>
+  
+
+  <div class="main-logo-full">
+    <button class="full-logo">
+    </button>
+  </div>
+
+  <div class="main-search-container ">
+    <div class="search-container">
+      <div class="search-left">
+      <button class="search-left-btn">
+        <img src="GoogleGradientGLogo.png"  class="search-btn-img3">
+      </button>
+    </div>
+      <script async src="https://cse.google.com/cse.js?cx=04603f78469e74de0">
+</script>
+<div class="gcse-searchbox"></div>
+     <div class="gcse-searchbox" data-mobileLayout="forced"></div>
+  
+      <div class="search-right">
+      <button class="search-btn1">
+        <a href="#">
+        <img src="Googlevoice.png" class="search-btn-img1"></a>
+      </button>
+      <button class="search-btn2">
+        <a href="https://www.bing.com/camera?ptn=Homepage&rtpu=%2F">
+        <img src="google-camera-lens-icon-symbol-free-png.png" class="search-btn-img">
+        </a>
+      </button>
+      </div>
+    </div>
+  </div>
+  <div class="main-search-results">
+    <div class="gcse-searchresults"></div>
+  </div>
+  <div class="all-headers-background"></div>
+
+  
+  <nav>
+    <button id="NavSearchBtn">
+      <section><i class="material-icons-outlined">search</i></section>
+      <span>Search</span>
+    </button>
+    <button id="NavGeminiBtn">
+      <section><img src="google-gemini-icon.png"></section>
+      <span>Gemini</span>
+    </button>
+    <button id="NavBookmarksBtn">
+      <section><i class="material-icons-outlined">bookmarks</i></section>
+      <span>Saved</span>
+    </button>
+  </nav>
+  
+  <div id="BookmarksPage">
+    <p class="bookmarks-page-title">Bookmarks</p>
+    <button id="addBookmarkBtn">
+<i class="ri-add-large-fill"></i>
+    </button>
+      <div id="bookmarkForm" style="display: none;">
+            <input type="text" id="bookmarkUrl" placeholder="Enter bookmark URL">
+            <button id="saveBookmarkBtn">Save</button>
+        </div>
+        <ul id="bookmarksList"></ul>
+  </div>
+  <div>
+      <iframe src="https://poe.com/Gemini-Advanced-2.0" title="gemini" id="GeminiPage"></iframe>
+  </div>
+
+
+  <!--<div id="gradientbg"></div>-->
+
+  
+
+  <script type="module" src="script.js"></script>
+
+</body>
+
+        </html>
