@@ -12,6 +12,9 @@
   .full-logo {
   background-image: url("GOOGLE_LOGO_WHITE.png");
   }
+  html:not([data-scroll='0']) .full-logo {
+  background-image: url("GOOGLE_LOGO_WHITE.png");
+  }
   .header-button-switch {
     background-color: #181E2C;
   }
@@ -113,7 +116,9 @@ li {
   .full-logo {
   background-image: url("googlelogo_color.png");
   }
-
+  html:not([data-scroll='0']) .full-logo {
+  background-image: url("googlelogo_color.png");
+  }
   .search-container {
     background-color: #abb8e0;
     box-shadow: 0 0 10pt #c1c9e6;
@@ -470,7 +475,6 @@ html:not([data-scroll='0']) .search-container {
   z-index: 72;
 }
 html:not([data-scroll='0']) .full-logo {
-  background-image: url("googlelogo_color_160x56dp.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 75pt;
