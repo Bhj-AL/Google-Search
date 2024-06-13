@@ -9,6 +9,9 @@
   text-decoration: none;
   color: #b4c9fa;
   }
+  .full-logo {
+  background-image: url("GOOGLE_LOGO_WHITE.png");
+  }
   .header-button-switch {
     background-color: #181E2C;
   }
@@ -106,6 +109,9 @@ li {
    button a {
   text-decoration: none;
   color: #000221;
+  }
+  .full-logo {
+  background-image: url("googlelogo_color.png");
   }
 
   .search-container {
@@ -276,7 +282,6 @@ html, body {
   justify-content: center;
   }
 .full-logo {
-  background-image: url("googlelogo_color_160x56dp.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 140pt;
