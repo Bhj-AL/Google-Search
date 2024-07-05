@@ -119,16 +119,43 @@ document.getElementById("NavSearchBtn").onclick = function() {
     
 document.getElementById("BookmarksPage").style.display = "none";
     document.getElementById("GeminiPage").style.display = "none";
+    document.getElementById("translatePage").style.display = "none";
     };
 
 document.getElementById("NavGeminiBtn").onclick = function() {
     
 document.getElementById("BookmarksPage").style.display = "none";
     document.getElementById("GeminiPage").style.display = "block";
+    document.getElementById("translatePage").style.display = "none";
     };
 
 document.getElementById("NavBookmarksBtn").onclick = function() {
     
 document.getElementById("BookmarksPage").style.display = "block";
     document.getElementById("GeminiPage").style.display = "none";
+    document.getElementById("translatePage").style.display = "none";
     };
+
+document.getElementById("NavTranslateBtn").onclick = function() {
+    
+document.getElementById("translatePage").style.display = "block";
+    document.getElementById("GeminiPage").style.display = "none";
+
+document.getElementById("BookmarksPage").style.display = "none";
+    };
+
+document.getElementById("NavAboutBtn").onclick = function() {
+    
+document.getElementById("aboutPage").style.display = "block";
+};
+
+
+// close btn
+document.getElementById("ClosePagesOne").onclick = function() {
+    document.getElementById("aboutPage").style.display = "none";
+    document.getElementById("BookmarksPage").style.display = "none";
+};
+document.getElementById("ClosePagesTwo").onclick = function() {
+    document.getElementById("aboutPage").style.display = "none";
+    document.getElementById("BookmarksPage").style.display = "none";
+};
