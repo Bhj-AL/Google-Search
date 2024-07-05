@@ -1,7 +1,11 @@
 @media (prefers-color-scheme: dark) {
-  html, body {
-  background-color: #0E0E1F;
+  body {
+  background-color: #0a0a0a;
   }
+  .full-logo {
+  background-image: url("GOOGLE_LOGO_WHITE.png");
+  }
+
   .header-button {
   color: #b4c9fa;
   }
@@ -9,18 +13,12 @@
   text-decoration: none;
   color: #b4c9fa;
   }
-  .full-logo {
-  background-image: url("GOOGLE_LOGO_WHITE.png");
-  }
-  html:not([data-scroll='0']) .full-logo {
-  background-image: url("GOOGLE_LOGO_WHITE.png");
-  }
   .header-button-switch {
     background-color: #181E2C;
   }
   .search-container {
-    background-color: #181E2C;
-    box-shadow: 0 0 10pt #1b2133;
+    background-color: rgb(18, 18, 18,0.5) !important;
+    box-shadow: 0 0 25pt #212121;
   }
     .gsc-input {
   color: white !important;
@@ -35,8 +33,8 @@
   .gsc-completion-container tbody {
   background-color: #1a1a1a;
   color: white;
-}
-.gsc-completion-container tbody tr td {
+  }
+  .gsc-completion-container tbody tr td {
   background-color: #1a1a1a;
   color: white;
 }
@@ -58,53 +56,68 @@
 .gsc-inline-block {
   background-color: black !important;
 }
-html:not([data-scroll='0']) .search-container {
-  background-color: #181E2C;
-  box-shadow: 0 0 10pt #1b2133;
-}
+
 html:not([data-scroll='0']) .all-headers-background {
-  background-color: #0E0E1F;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(25px) !important;
 }
 nav {
-  background-color: #181E2C;
+  background-image: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.85), rgba(0,0,0, 0.8),rgba(0,0,0, 0.6),rgba(0,0,0, 0.4));
+  backdrop-filter: blur(25px);
+}
+  #ClosePagesOne i {
+  color: white;
+}
+#ClosePagesTwo i {
+  color: white;
 }
 nav button span {
-  color: #b4c9fa;
+  color: white;
 }
+  .nav-buttons button:hover span {
+    color: #0044ff;
+  }
 nav button section:hover {
-  background-color: #b4c9fa;
+  background-color: transparent ;
 }
 nav button section i {
-  color: #b4c9fa;
+  color: white;
 }
-nav button section i:hover {
-  color: #001c38;
+nav button:hover section i {
+  color: #0044ff;
 }
-#BookmarksPage {
-  background-color: #0E0E1F;
+#BookmarksPage, #aboutPage{
+  background-color: rgba(0,0,0,0.4);
+  backdrop-filter: blur(25px) !important;
+  box-shadow: 0 0 40pt #404040;
 }
 .bookmarks-page-title {
-  color: #b4c9fa;
+  color: white;
 }
 #addBookmarkBtn {
-  background-color: #181E2C;
-  box-shadow: 0 0 10pt #1b2133;
-  color: #b4c9fa;
+  background-color: #0f0f0f;
+  box-shadow: 0 0 10pt #262626;
+  color: white;
 }
 li {
-    background-color: #181E2C;
+  background-color: #121212;
+  color: white;
 }
 #bookmarkForm {
-  background-color: #181E2C;
+  background-color: #1c1c1c !important;
 }
 #bookmarkUrl, #saveBookmarkBtn, .deleteBookmarkBtn {
-  background-color: #0E0E1F;
-  color: #b4c9fa;
+  background-color: #000000;
+  color: white;
 }
 }
+
 @media (prefers-color-scheme: light) {
-  html, body {
-  background-color: #dedfff;
+  body {
+  background-color: #F2F1F7;
+  }
+  .full-logo {
+  background-image: url("googlelogo_color.png");
   }
   .header-button {
   color: #000221;
@@ -113,15 +126,15 @@ li {
   text-decoration: none;
   color: #000221;
   }
-  .full-logo {
-  background-image: url("googlelogo_color.png");
-  }
-  html:not([data-scroll='0']) .full-logo {
-  background-image: url("googlelogo_color.png");
-  }
+#ClosePagesOne i {
+  color: black;
+}
+#ClosePagesTwo i {
+  color: black;
+}
   .search-container {
-    background-color: #abb8e0;
-    box-shadow: 0 0 10pt #c1c9e6;
+    background-color: rgb(235, 235, 235,0.5) !important;
+    box-shadow: 0 0 25pt #b8b8b8;
   }
     .gsc-input {
   color: black !important;
@@ -140,8 +153,9 @@ li {
 .gsc-completion-container tbody tr td {
   background-color: #c8cde6;
   color: black;
-}
-.gsc-completion-container tbody tr td {
+     }
+
+  .gsc-completion-container tbody tr td {
   border: none !important;
   background-color: #c8cde6;
 }
@@ -159,56 +173,65 @@ li {
 .gsc-inline-block {
   background-color: white !important;
 }
-html:not([data-scroll='0']) .search-container {
-  background-color: #abb8e0;
-  box-shadow: 0 0 10pt #c1c9e6;
-}
+
 html:not([data-scroll='0']) .all-headers-background {
-  background-color: #dedfff;
+  background-color: rgb(255, 255, 255, 0.6);
+  backdrop-filter: blur(25px) !important;
 }
-nav {
-  background-color: #abb8e0;
+  nav {
+  background-image: linear-gradient(to top, rgba(255,255,255,0.9), rgba(255,255,255,0.85), rgba(255,255,255, 0.8),rgba(255,255,255, 0.6),rgba(255,255,255, 0.4));
+  backdrop-filter: blur(25px);
 }
 nav button span {
-  color: #000221;
+  color: black;
 }
 nav button section:hover {
-  background-color: #8697db;
+  background-color: transparent;
 }
+.nav-buttons button:hover span {
+    color: #0044ff;
+  }
+.nav-buttons button:hover section i {
+  color: #0044ff;
+  }
 nav button section i {
-  color: #000221;
+  color: black;
 }
-nav button section i:hover {
-  color: #001c38;
-}
-#BookmarksPage {
-  background-color: #dedfff;
+#BookmarksPage, #aboutPage {
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(25px) !important;
+  box-shadow: 0 0 40pt #adadad;
 }
 .bookmarks-page-title {
   color: #000221;
 }
 #addBookmarkBtn {
-  background-color: #abb8e0;
-  box-shadow: 0 0 10pt #c1c9e6;
+  background-color: #f5f5f5;
+  box-shadow: 0 0 10pt #d1d1d1;
   color: #000221;
 }
-li {
-    background-color: #abb8e0;
+  li {
+    background-color: #f0f0f0;
 }
 #bookmarkForm {
-  background-color: #abb8e0;
+  background-color: #f0f0f0;
 }
 #bookmarkUrl, #saveBookmarkBtn, .deleteBookmarkBtn {
-  background-color: #dedfff;
+  background-color: #ffffff;
   color: #000221;
 }
  .gs-bidi-start-align {
    color: black !important;
  }
-  }
-html, body {
+}
+
+
+
+
+body {
   font-family: Product Sans;
 }
+
 @font-face {
     font-family: Product Sans Bold;
     src: url(Product Sans Bold.ttf);
@@ -285,7 +308,7 @@ html, body {
   display: flex;
   margin-top: 12vh;
   justify-content: center;
-  }
+}
 .full-logo {
   background-position: center;
   background-repeat: no-repeat;
@@ -300,6 +323,8 @@ html, body {
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-top: 15pt;
+  margin-bottom: 3pt;
 }
 .search-container {
   display: flex;
@@ -308,69 +333,44 @@ html, body {
   align-items: center;
   width: 80%;
   height: 18pt;
-  border-radius: 25pt;
-  padding: 15pt;
+  border-radius: 16pt;
+  padding: 10pt;
   transition: height 1s, top 1s;
 }
-.search-btn1 {
-  background-color: transparent;
-  padding-top: 4.5pt;
-  border: none;
-  font-size: 10pt;
-  aspect-ratio: 1/1;
-}
-.search-btn2 {
-  background-color: transparent;
-  border: none;
-}
-.search-btn-img {
-  width: 12.5pt;
-}
-.search-btn-img1 {
-  width: 16pt;
-  margin-bottom: 3pt;
-  
-}
-.search-btn-img3 {
-  width: 20pt;
-  margin-left: -4pt;
-}
-.search-left-btn {
-  background-color: transparent;
-  border: none;
-  padding-top: 4.5pt;
-  aspect-ratio: 1/1;
-}
-.search-left {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 25pt;
-  background-color: transparent;
-}
+
+
 .search-right {
   display: flex;
   justify-content: space-between;
   width: 50pt;
   background-color: transparent;
+  margin-top: 3.5pt;
+  margin-right: 3pt;
+  margin-left: 7pt;
+}
+.search-right a i {
+  font-size: 15pt;
+  color: #0044ff;
 }
 .gsc-search-box {
-  width: calc(77vw - 75pt) !important;
+  width: calc(78vw - 50pt) !important;
+  background-color: transparent !important;
+  margin-top: 2.5pt !important;
 }
 .gcse-searchbox {
   background-color: transparent;
 }
 .gsc-search-button {
-  display: none
+  display: none !important;
 }
 .gsc-search-button-v2 path {
-  display: none;
-}
+  display: none !important;
+  }
 .gsc-search-button-v2 svg {
-  display: none;
+  display: none !important;
 }
 .gsc-search-button button {
-  display: none;
+  display: none !important;
 }
 .gsc-input div {
   background-color: transparent;
@@ -460,20 +460,12 @@ html, body {
   width: 100%;
   margin-bottom: 100pt !important;
 }
-html:not([data-scroll='0']) .search-container {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-  width: 80%;
-  height: 6pt;
-  border-radius: 25pt;
-  padding-top: 15pt;
-  padding-bottom: 15pt;
-  position: fixed;
-  top: 50pt;
-  z-index: 72;
-}
+
+
+
+
+
+
 html:not([data-scroll='0']) .full-logo {
   background-position: center;
   background-repeat: no-repeat;
@@ -485,10 +477,11 @@ html:not([data-scroll='0']) .full-logo {
   position: fixed;
   top: 7pt;
   z-index: 71;
+  
 }
 html:not([data-scroll='0']) .all-headers-background {
   width: 100%;
-  height: 100pt;
+  height: 50pt;
   position: fixed;
   top: 0;
   left: 0;
@@ -507,16 +500,21 @@ headers-background {
   transition: background-color 1s, backdrop-filter 1s;
 }
 
-
 nav {
-  width: 100%;
-  height: 19pt;
   position: fixed;
   bottom: 0;
   right: 0;
+  width: 100%;
+  height: 110pt;
+}
+.nav-buttons {
+  width: calc(100% - 15pt);
+  height: 19pt;
   z-index: 81;
   padding-top: 15pt;
   padding-bottom: 15pt;
+  padding-left: 7.5pt;
+  padding-right: 7.5pt;
   display: flex;
   justify-content: space-around;
   align-content: center;
@@ -534,8 +532,9 @@ nav button {
   border: none;
 }
 nav button span {
-  font-size: 10pt;
+  font-size: 9pt;
   font-family: Product Sans;
+  margin-top: 1pt;
 }
 nav button section {
   width: 40pt;
@@ -549,7 +548,7 @@ nav button section {
   padding: 2pt !important;
 }
 nav button section i {
-  font-size: 15pt !important;
+  font-size: 16pt !important;
 }
 nav button section i:hover {
   font-size: 15pt !important;
@@ -557,18 +556,25 @@ nav button section i:hover {
 nav button section img {
   width: 15pt;
 }
-#BookmarksPage {
+
+#BookmarksPage, #aboutPage {
   width: 100%;
-  height: calc(100% - 49pt);
+  height: 75vh;
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   display: none;
   z-index: 91;
+  border-radius: 15pt 15pt 0 0;
   animation-name: FadeInSaved;
   animation-duration: 0.3s;
 }
-#GeminiPage {
+#aboutPage p {
+  text-align: center;
+  margin-top: 45%;
+  color: red;
+}
+#GeminiPage, #translatePage {
   display: none;
   animation-name: FadeInGemini;
   animation-duration: 0.3s;
@@ -583,21 +589,21 @@ iframe {
   border: none !important;
 }
 .bookmarks-page-title {
-  top: -10pt;
-  left: 10pt;
-  position: fixed;
-  font-family: Product Sans;
+  font-family: Product Sans Bold;
   font-size: 20pt;
+  margin-left: 20pt;
+  margin-bottom: -35pt !important;
 }
 #addBookmarkBtn {
   position: fixed;
-  bottom: 59pt;
+  bottom: 10pt;
   right: 10pt;
   border: none;
   padding: 10pt;
   font-size: 15pt;
-  aspect-ratio: 1/1 !important;
-  border-radius: 10pt;
+  width: 40pt !important;
+  height: 40pt !important;
+  border-radius: 15pt;
 } 
 ul {
     list-style-type: none;
@@ -606,24 +612,25 @@ ul {
 }
 li {
     padding: 10pt;
-    margin: 10pt;
+    margin: 10pt 20pt 10pt 20pt;
     border: none;
     border-radius: 10pt;
     display: flex;
     justify-content: space-between;
-    width: calc(100% - 40pt);
+    width: calc(100% - 60pt);
     align-items: center;
 }
 #bookmarkForm {
   margin-top: 50pt;
-  width: calc(100% - 40pt);
+  width: calc(100% - 60pt);
   padding: 10pt;
-  margin-left: 10pt;
+  margin-left: 20pt;
   border-radius: 10pt;
   display: flex;
   justify-content: space-between;
   align-items: center;
   align-content: center;
+  margin-bottom: -40pt;
 }
 #bookmarkUrl {
     width: calc(100% - 95pt);
@@ -645,14 +652,30 @@ li {
   padding: 7pt;
   font-family: Product Sans;
 }
+#ClosePagesOne, #ClosePagesTwo {
+  float: right;
+  margin-top: 10pt;
+  margin-right: 20pt;
+  border: none;
+  background-color: transparent;
+  height: 25pt;
+}
+#ClosePagesOne i {
+  font-size: 20pt;
+  margin-top: 2pt;
+}
+#ClosePagesTwo i {
+  font-size: 20pt;
+  margin-top: 2pt;
+}
 @keyframes FadeInGemini {
   0% {
     filter: opacity(0) blur(5px);
     transform: scale(0.1) translate(10%, 100%);
     position: fixed;
-    left: 0;
+    bottom: -100;
   }
-  100% {
+    100% {
     filter: opacity(1) blur(0);
     transform: scale(1) translate(0%, 0%);
   }
@@ -661,13 +684,13 @@ li {
 @keyframes FadeInSaved {
   0% {
     filter: opacity(0) blur(5px);
-    transform: scale(0) translate(70%, 100%);
+    transform: scale(0) translate(10%, 100%);
     position: fixed;
-    left: 0;
+    bottom: -100;
   }
   100% {
     filter: opacity(1) blur(0);
     transform: scale(1) translate(0%, 0%);
   }
   
-}
+  }
