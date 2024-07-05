@@ -1,9 +1,3 @@
-<!--
-  Hit RUN to see this project in action!
-  
-  This project will auto-refresh as you edit the HTML, CSS and JS. See README.md for more info (including how to disable auto-refresh and install packages).
--->
-
 <!DOCTYPE html>
 <html>
 
@@ -12,13 +6,12 @@
   <meta name="viewport" content="width=device-width">
   <title>Google</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-    rel="stylesheet"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round">
-  <link rel="icon" type="image/x-icon" href="google-logo-icon-png-transparent-background-osteopathy-16.png">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
 
 <body>
+  
     <div class="header-right">
       
       <button class="header-button"><a href="https://myaccount.google.com/communication-preferences?utm_source=ga_privacy&utm_medium=web&continue=https%3A%2F%2Fmyaccount.google.com%2Fdata-and-privacy">
@@ -39,54 +32,65 @@
     </button>
   </div>
 
-  <div class="main-search-container ">
+  
+  <div class="main-search-results">
+    <div class="gcse-searchresults"></div>
+  </div>
+  <div class="all-headers-background"></div>
+
+
+
+  <nav>
+    <div class="main-search-container ">
     <div class="search-container">
-      <div class="search-left">
-      <button class="search-left-btn">
-        <img src="GoogleGradientGLogo.png"  class="search-btn-img3">
-      </button>
-    </div>
       <script async src="https://cse.google.com/cse.js?cx=04603f78469e74de0">
 </script>
 <div class="gcse-searchbox"></div>
      <div class="gcse-searchbox" data-mobileLayout="forced"></div>
   
       <div class="search-right">
-      <button class="search-btn1">
         <a href="#">
-        <img src="Googlevoice.png" class="search-btn-img1"></a>
-      </button>
-      <button class="search-btn2">
+        <i class="material-icons-outlined">
+graphic_eq
+        </i>
+
         <a href="https://www.bing.com/camera?ptn=Homepage&rtpu=%2F">
-        <img src="google-camera-lens-icon-symbol-free-png.png" class="search-btn-img">
+        <i class="material-icons-outlined">
+center_focus_strong
+        </i>
         </a>
-      </button>
       </div>
     </div>
-  </div>
-  <div class="main-search-results">
-    <div class="gcse-searchresults"></div>
-  </div>
-  <div class="all-headers-background"></div>
-
-  
-  <nav>
+    </div>
+    
+    <div class="nav-buttons">
     <button id="NavSearchBtn">
       <section><i class="material-icons-outlined">search</i></section>
       <span>Search</span>
-    </button>
-    <button id="NavGeminiBtn">
-      <section><img src="google-gemini-icon.png"></section>
-      <span>Gemini</span>
     </button>
     <button id="NavBookmarksBtn">
       <section><i class="material-icons-outlined">bookmarks</i></section>
       <span>Saved</span>
     </button>
+    <button id="NavGeminiBtn">
+      <section><i class="material-icons-outlined">chat</i></section>
+      <span>Gemini</span>
+    </button>
+    <button id="NavTranslateBtn">
+      <section><i class="material-icons-outlined">translate</i></section>
+      <span>Translate</span>
+    </button>
+    <button id="NavAboutBtn">
+      <section><i class="material-icons-outlined">info</i></section>
+      <span>About</span>
+    </button>
+  </div>
   </nav>
-  
+
   <div id="BookmarksPage">
     <p class="bookmarks-page-title">Bookmarks</p>
+    <button id="ClosePagesOne">
+    <i class="material-icons-outlined">close</i></button>
     <button id="addBookmarkBtn">
 <i class="ri-add-large-fill"></i>
     </button>
@@ -97,16 +101,18 @@
         <ul id="bookmarksList"></ul>
   </div>
   <div>
-      <iframe src="https://poe.com/Gemini-Advanced-2.0" title="gemini" id="GeminiPage"></iframe>
+      <iframe src="https://poe.com/Gemini-1.5-Flash" title="gemini" id="GeminiPage"></iframe>
   </div>
-
-
-  <!--<div id="gradientbg"></div>-->
-
   
-
+  <iframe src="https://www.bing.com/translator" title="translate" id="translatePage"></iframe>
+  <div id="aboutPage">
+    <button id="ClosePagesTwo">
+    <i class="material-icons-outlined">close</i></button>
+    <p> Version 1.5 <br><br> All copyrights reserved <br><br> 2023 - 2024</p>
+  </div>
+  
+  
   <script type="module" src="script.js"></script>
-
-</body>
-
-        </html>
+  <script type="module" src="countries.js"></script>
+ </body>
+  </html>
