@@ -24,6 +24,7 @@
   color: white !important;
 }
 .gssb_c tbody tr td {
+.gssb_c tbody tr td {
   background-color: #1a1a1a;
 }
 .gsc-completion-container {
@@ -33,8 +34,8 @@
   .gsc-completion-container tbody {
   background-color: #1a1a1a;
   color: white;
-  }
-  .gsc-completion-container tbody tr td {
+}
+.gsc-completion-container tbody tr td {
   background-color: #1a1a1a;
   color: white;
 }
@@ -44,7 +45,7 @@
 }
 .gsc-completion-container {
   border: none !important;
-  background-color: #1a1a1a;
+  background-color: #1a1a1a !important;
 }
 .gst1_50 {
   background-color: #1a1a1a;
@@ -140,31 +141,30 @@ li {
   color: black !important;
 }
 .gssb_c tbody tr td {
-  background-color: #c8cde6;
+  background-color: white;
 }
 .gsc-completion-container {
-  background-color: #c8cde6;
+  background-color: white;
   color: black;
 }
   .gsc-completion-container tbody {
-  background-color: #c8cde6;
+  background-color: white;
   color: black;
 }
 .gsc-completion-container tbody tr td {
-  background-color: #c8cde6;
+  background-color: white;
   color: black;
-     }
-
-  .gsc-completion-container tbody tr td {
+}
+.gsc-completion-container tbody tr td {
   border: none !important;
-  background-color: #c8cde6;
+  background-color: white;
 }
 .gsc-completion-container {
   border: none !important;
-  background-color: #c8cde6;
+  background-color: white;
 }
 .gst1_50 {
-  background-color: #c8cde6;
+  background-color: white;
 }
 .gsc-tabsArea {
   background-color: white;
@@ -667,6 +667,17 @@ li {
 #ClosePagesTwo i {
   font-size: 20pt;
   margin-top: 2pt;
+}
+.gssb_c {
+  position: absolute;
+  bottom: 100pt !important;
+  top: auto !important;
+}
+.gssb_c tbody tr td {
+  border-radius: 15pt;
+}
+table {
+  border-radius: 15pt;
 }
 @keyframes FadeInGemini {
   0% {
